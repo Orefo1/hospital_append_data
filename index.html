@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://colorlib.com/etc/tb/Table_Fixed_Column/index.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Table V05</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://colorlib.com/etc/tb/Table_Fixed_Column/images/icons/favicon.ico"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Table V05_files/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="Table V05_files/"> -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Table V05_files/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Table V05_files/animate.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Table V05_files/select2.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Table V05_files/perfect-scrollbar.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="Table V05_files/util.css" />
+    <link rel="stylesheet" type="text/css" href="Table V05_files/main.css" />
+
+    <meta name="robots" content="noindex, follow" />
+    
+    
+  </head>
+  <body cz-shortcut-listen="true">
+    <div class="limiter">
+      <div class="container-table100">
+        <div class="wrap-table100">
+          <div class="table100 ver1">
+            <div class="wrap-table100-next js-pscroll ps ps--active-x" id="table-details-container">
+              <div class="table100-nextcols">
+                <table>
+                  <thead>
+                    <tr class="row100 head">
+                        <th class="cell100 column2">Patients Name</th>
+                        <th class="cell100 column2">Primary Care Physician</th>
+                      <th class="cell100 column2">Date of birth</th>
+                      <th class="cell100 column3">address</th>
+                      <th class="cell100 column4">Email</th>
+                      <th class="cell100 column4">MMJ Card/MMCC ID</th>
+                      <th class="cell100 column5">Expiring date</th>
+                      <th class="cell100 column6">Driver’s License</th>
+                      <th class="cell100 column7">Driver’s License expiring date</th>
+                      <th class="cell100 column8">Home phone</th>
+                      <th class="cell100 column8">Cell phone</th>
+                      <th class="cell100 column8">Registered Caregiver</th>
+                      <th class="cell100 column8">veteran</th>
+                      <th class="cell100 column8">Qualifying Condition</th>
+                      <th class="cell100 column8">Other medical condition</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row100 body">
+                      <td class="cell100 column2">CMO</td>
+                      <td class="cell100 column3">16 Nov 2012</td>
+                      <td class="cell100 column4">16 Nov 2017</td>
+                      <td class="cell100 column5">brandon94@example.com</td>
+                      <td class="cell100 column6">30</td>
+                      <td class="cell100 column7">New York City, NY</td>
+                      <td class="cell100 column8">424242xxxxxx6262</td>
+                      <td class="cell100 column7">New York City, NY</td>
+                      <td class="cell100 column8">424242xxxxxx6262</td>
+                      <td class="cell100 column7">New York City, NY</td>
+                      <td class="cell100 column8">424242xxxxxx6262</td>
+                      <td class="cell100 column7">New York City, NY</td>
+                      <td class="cell100 column7">New York City, NY</td>
+                      <td class="cell100 column8">424242xxxxxx6262</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="ps__rail-x"
+                style="width: 1166px; left: 0px; bottom: 10px"
+              >
+                <div
+                  class="ps__thumb-x"
+                  tabindex="0"
+                  style="left: 0px; width: 688px"
+                ></div>
+              </div>
+              <div class="ps__rail-y" style="top: 0px; right: 0px">
+                <div
+                  class="ps__thumb-y"
+                  tabindex="0"
+                  style="top: 0px; height: 0px"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+    <script src="table.js"></script>
+
+    <script src="./Table V05_files/jquery-3.2.1.min.js.download"></script>
+
+    <script src="./Table V05_files/popper.js.download"></script>
+    <script src="./Table V05_files/bootstrap.min.js.download"></script>
+
+    <script src="./Table V05_files/select2.min.js.download"></script>
+
+    <script src="./Table V05_files/perfect-scrollbar.min.js.download"></script>
+    <script>
+      $(".js-pscroll").each(function () {
+        var ps = new PerfectScrollbar(this);
+
+        $(window).on("resize", function () {
+          ps.update();
+        });
+
+        $(this).on("ps-x-reach-start", function () {
+          $(this)
+            .parent()
+            .find(".table100-firstcol")
+            .removeClass("shadow-table100-firstcol");
+        });
+
+        $(this).on("ps-scroll-x", function () {
+          $(this)
+            .parent()
+            .find(".table100-firstcol")
+            .addClass("shadow-table100-firstcol");
+        });
+      });
+    </script>
+
+    <script async="" src="Table V05_files/js"></script>
+    <!-- <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script> -->
+
+    <!-- <script src="./Table V05_files/main.js.download"></script> -->
+    <!-- <script
+      defer=""
+      src="./Table V05_files/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+      integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+      data-cf-beacon='{"rayId":"8422cc00dfb8b962","version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
